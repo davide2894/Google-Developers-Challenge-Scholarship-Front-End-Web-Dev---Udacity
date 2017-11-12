@@ -1,0 +1,8 @@
+.card-container {
+  max-width: 600px;
+  height: 840px;
+  border: 1px solid black;
+  display: flex;
+  flex-direction: column-reverse;
+  margin: 0 auto;
+  background: #000; }

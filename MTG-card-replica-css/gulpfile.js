@@ -13,14 +13,14 @@ var deploy = require("gulp-gh-pages");
 var cssUrl = require("gulp-css-url-adjuster");
 var rename = require("gulp-rename");
 var browserSync = require("browser-sync").create();
-
+    
 
 //Development tasks
 //-------------------
-
+    
 //compile SCSS into CSS
 gulp.task("sass", function () {
-    return gulp.src("app/scss/**/*.scss")
+    return gulp.src("app/scss/*.scss")
         .pipe(sass())
         .pipe(gulp.dest("app/css"))
         .pipe(browserSync.reload({
