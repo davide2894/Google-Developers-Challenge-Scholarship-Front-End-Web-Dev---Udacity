@@ -4,37 +4,58 @@
 <head>
     <meta charset="UTF-8">
     <title>MTG card</title>
-    <link rel="stylesheet" href="css/main.css">
 
-    <!-- Oath of the Gatewatch favicon -->
+    <!-- Favicon -->
     <link rel="apple-touch-icon" href="images/oath-of-the-gatewatch-icon-set/android-icon-144x144.png">
 
-    <!-- MTG set symbol font -->
-    <link href="//cdn.jsdelivr.net/npm/keyrune@latest/css/keyrune.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="css/main.css">
 
-    <!-- MTG mana -->
+    <!-- Set icons-->
+    <link href="css/keyrune.css" rel="stylesheet" type="text/css" />
 
+    <!-- Mana icons -->
+    <link href="css/mana.css" rel="stylesheet" type="text/css" />
 </head>
 
 <body>
 
-    <div class="card-container flex">
+    <div class="card-container ">
         <div class="card-background flex">
 
             <div class="card-frame flex-col">
-                <div class="frame-header">
-                    <div class="frame-img">
-                        <div class="frame-type-line">
-                            <div class="frame-text-box">
-                                <div class="frame-bottom-info"></div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
 
+                <div class="frame-header">
+                    <h1 class="name">Oath of Nissa</h1>
+                    <i class="ms ms-g" id="mana-icon"></i>
+                </div>
+
+
+                <img class="frame-art" src="images/cardart_OGW_Oath-of-Nissa.jpg">
+
+                <div class="frame-type-line">
+                    <h1 class="type">Legendary Enchantment</h1>
+                    <img src="images/OGW_R.png" id="set-icon" alt="OGW-icon">
+                </div>
+
+                <div class="frame-text-box">
+                    <p class="description ftb-inner-margin">When Oath of Nissa enters the battlefield, look at the top three cards of your library. You may reveal a creature, land, or planeswalker card from among them and put it into your hand. Put the rest on the bottom of your library in any order.</p>
+                    <p class="description">
+                        You may spend mana as though it were mana of any color to cast planeswalker spells.</p>
+                    </p>
+                    <p class="special-text">"For the life of every plane, I will keep watch."</p>
+                </div>
+
+                <div class="frame-bottom-info">
+                    <div class="fbi-left">
+                        <p>140/184 R</p>
+                        <p>OGW &#x2022; </p>
+                    </div>
+                    
+                    <div class="fbi-right"></div>
+                </div>
+
+            </div>
         </div>
-    </div>
 
 </body>
 
