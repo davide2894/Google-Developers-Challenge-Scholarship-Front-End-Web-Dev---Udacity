@@ -6,5 +6,10 @@ The idea is to replicate a card from the trading card game [Magic: The Gathering
 Specifically, the card to replicate is the following: [Oath of Nissa](http://gatherer.wizards.com/Pages/Card/Details.aspx?name=Oath+of+Nissa).
 
 ## Tools
-[Keyrune](https://github.com/andrewgioia/Keyrune) for the expansion font 
+* [Keyrune](https://github.com/andrewgioia/Keyrune) for the expansion font 
 * [Mana](https://github.com/andrewgioia/Mana) font  
+
+##Credits 
+* [Andrew Gioia](https://github.com/andrewgioia)
+* [deckmaster](https://deckmaster.info/card.php?multiverseid=-436316)
+* [Wizards of the coast](http://company.wizards.com)
