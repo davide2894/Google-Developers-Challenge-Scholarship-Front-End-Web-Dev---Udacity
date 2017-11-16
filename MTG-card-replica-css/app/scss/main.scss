@@ -221,30 +221,51 @@ table {
     margin: 0 15px;
     background: #CAD7D0;
     display: flex;
-    flex-wrap: wrap;    
+    flex-direction: column;
+    justify-content: space-around;    
     padding: 10px;
     box-sizing: border-box;
     font-size: 1.08em;
 }
 
-.special-text {
+.flavour-text {
     font-style: italic;
-    margin-top: 5px;
+    padding: 10px 0;
+    border: 1px solid pink;
 }
 
 p {
     margin-bottom: 5px;
-    
 }
 
 .ftb-inner-margin {
     margin: 5px 1px;
 }
 
-/*
+.frame-bottom-info {
+    color: white;
+    display: flex;
+    margin: 5px 15px 0 15px; 
+}
 
-*search for paintbrush mtg card symbol at the bottom
-*bootom: 
-    div left: column
-    div right: row
-*/
+.frame-bottom-info img {
+    overflow: hidden;
+    width: 10px;
+}
+.fbi-left {
+    flex: 1;
+    font-size: 8px;
+}
+.fbi-left p:first-of-type {
+    margin-bottom: 1px;
+}
+.fbi-right {
+    font-size: 8px;
+}
+
+
+.inner-margins {
+    margin: 0 15px;
+}
+
+//Insert foil dot at the bottom
