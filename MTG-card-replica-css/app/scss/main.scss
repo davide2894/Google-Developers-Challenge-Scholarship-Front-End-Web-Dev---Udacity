@@ -254,15 +254,17 @@ p {
 }
 .fbi-left {
     flex: 1;
-    font-size: 8px;
 }
 .fbi-left p:first-of-type {
     margin-bottom: 1px;
 }
 .fbi-right {
-    font-size: 8px;
 }
 
+.fbi-left,
+.fbi-right {
+    font-size: 14px;
+}
 
 .inner-margins {
     margin: 0 15px;

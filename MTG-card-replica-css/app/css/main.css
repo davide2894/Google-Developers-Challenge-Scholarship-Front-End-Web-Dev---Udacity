@@ -227,14 +227,14 @@ p {
   width: 10px; }
 
 .fbi-left {
-  flex: 1;
-  font-size: 8px; }
+  flex: 1; }
 
 .fbi-left p:first-of-type {
   margin-bottom: 1px; }
 
+.fbi-left,
 .fbi-right {
-  font-size: 8px; }
+  font-size: 14px; }
 
 .inner-margins {
   margin: 0 15px; }
