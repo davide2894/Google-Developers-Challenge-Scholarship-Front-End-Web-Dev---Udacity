@@ -142,32 +142,32 @@ table {
     max-width: 500px;
     height: 700px;
     border: 1px solid black;
-    display: flex;
-    flex-direction: column-reverse;
     margin: 0 auto;
     background: #171314;
     margin-top: 56px;
-    display: flex;
-    flex-direction: column;
+    border-radius: 25px;
+    box-sizing: border-box;
 }
 
 .card-background {
     border: 1px solid green;
     flex-basis: 80%;
+    height: 595px;
     margin: 22px 22px 0 22px;
     border-top-left-radius: 6px;
     border-top-right-radius: 6px;
-    border-bottom-left-radius: 10%;
-    border-bottom-right-radius: 10%;
+    border-bottom-left-radius: 8%;
+    border-bottom-right-radius: 8%;
     background-image: url(/images/green-background.jpg);
     display: flex;
+    z-index: 0;
 }
 
 .card-frame {
     border: 1px solid orange;
     z-index: 1;
     position: relative;
-    height: 110%;
+    height: 109%;
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -225,7 +225,7 @@ table {
     justify-content: space-around;    
     padding: 10px;
     box-sizing: border-box;
-    font-size: 1.08em;
+    font-size: 1.25em;
 }
 
 .flavour-text {
@@ -245,6 +245,7 @@ p {
 .frame-bottom-info {
     color: white;
     display: flex;
+    justify-content: space-between;
     margin: 5px 15px 0 15px; 
 }
 
@@ -259,15 +260,36 @@ p {
     margin-bottom: 1px;
 }
 .fbi-right {
+    flex: 1;
+    text-align: right;
 }
 
 .fbi-left,
 .fbi-right {
-    font-size: 14px;
+    font-size: 10px;
+}
+
+.fbi-center {
+    border: 5px solid black;
+    border-radius: 60%;
+    flex-basis: 40px;
+    height: 15px;
+    position: relative;
+    bottom: 18px;
+    z-index: 2;
+    background: gray;
+}
+
+.fbi-left,
+.fbi-center,
+.fbi-right {
+  
 }
 
 .inner-margins {
     margin: 0 15px;
 }
 
-//Insert foil dot at the bottom
+
+//fix black tonality of holofoil dot
+
