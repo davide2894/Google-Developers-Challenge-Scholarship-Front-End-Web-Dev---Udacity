@@ -164,30 +164,34 @@ table {
 }
 
 .card-frame {
-    border: 1px solid orange;
+    
     z-index: 1;
     position: relative;
     height: 109%;
     width: 100%;
     display: flex;
     flex-direction: column;
+    border: 1px solid orange;
 }
 
 .frame-header,
 .frame-type-line {
     border: 2px solid #346348;
     background: #CAD7D0;
-    max-width: 100%;
     display: flex;
     margin-top: 10px;
+    margin-left: 5px;
+    margin-right: 5px;
     padding: 5px 0;
     display: flex;
     justify-content: space-between;
+    border-radius: 15px/40px;
 }
 
 .name,
 .type {
-    font-size: 28px;
+    font-size: 1.5em;
+    margin-left: 10px;
 }
 
 #mana-icon {
@@ -195,21 +199,23 @@ table {
     background: #ADD3AC;
     border-radius: 50%;
     padding: 2px;
+    box-sizing: border-box;
     box-shadow: -0.05em 0.15em 0px 0 black;
+    margin-right: 5px;
 }
 
 .frame-art {
     border: 1px solid #224E33;
     border-bottom-style: double;
     height: 50%;
-    margin: 0 15px;
+    margin: 0 10px;
 }
 
 #set-icon {
     height: 9%;
-    width: 9%;
+    width: 6%;
     overflow: hidden;
-    margin-right: 5px;
+    margin-right: 10px;
 }
 
 .frame-type-line {
@@ -218,7 +224,7 @@ table {
 
 .frame-text-box {
     border: 1px solid #224E33;
-    margin: 0 15px;
+    margin: 0 10px;
     background: #CAD7D0;
     display: flex;
     flex-direction: column;
@@ -270,26 +276,18 @@ p {
 }
 
 .fbi-center {
-    border: 5px solid black;
+    border: 5px solid #171314;
     border-radius: 60%;
     flex-basis: 40px;
     height: 15px;
     position: relative;
     bottom: 18px;
     z-index: 2;
-    background: gray;
-}
-
-.fbi-left,
-.fbi-center,
-.fbi-right {
-  
+    background: lightgray;
 }
 
 .inner-margins {
-    margin: 0 15px;
+    margin: 0 10px;
 }
-
-
-//fix black tonality of holofoil dot
-
+ 
+//Reduce frame left and right margins
