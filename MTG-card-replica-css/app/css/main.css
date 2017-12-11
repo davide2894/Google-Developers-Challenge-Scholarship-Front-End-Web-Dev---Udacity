@@ -130,9 +130,17 @@ table {
 ---------------------------
 ---------------------------
 */
+@font-face {
+  font-family: 'MPlantin';
+  src: url("../fonts/mplantin.eot?v=1.3.1");
+  src: url("../fonts/mplantin.eot?#iefix&v=1.3.1") format("embedded-opentype"), url("../fonts/mplantin.woff?v=1.3.1") format("woff"), url("../fonts/mplantin.ttf?v=1.3.1") format("truetype"), url("../fonts/mplantin.svg?v=1.3.1#mplantin") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
 body {
   display: flex;
-  justify-content: space-around; }
+  justify-content: space-around;
+  font-family: "MPlantin"; }
 
 .card-container {
   max-width: 500px;
@@ -141,7 +149,8 @@ body {
   background: #171314;
   margin-top: 56px;
   border-radius: 25px;
-  box-sizing: border-box; }
+  box-sizing: border-box;
+  box-shadow: -8px 9px 16px -3px gray; }
 
 .card-background {
   flex-basis: 80%;
@@ -159,7 +168,7 @@ body {
   z-index: 1;
   position: relative;
   height: 108%;
-  width: 98%;
+  max-width: 98%;
   left: 1%;
   top: 0.5%;
   display: flex;
@@ -172,25 +181,27 @@ body {
   margin-top: 10px;
   margin-left: 5px;
   margin-right: 5px;
-  padding: 6px 0;
+  padding: 8px 0;
   display: flex;
   justify-content: space-between;
-  border-radius: 10px/40px; }
+  border-radius: 18px/40px; }
 
 .name,
 .type {
-  font-size: 1.5em;
+  font-size: 1.3em;
   margin-left: 10px;
-  align-self: center; }
+  align-self: baseline;
+  font-weight: 600; }
 
 #mana-icon {
   font-size: 1.4em;
   background: #ADD3AC;
   border-radius: 50%;
-  padding: 0.5px;
   box-sizing: border-box;
-  box-shadow: -0.05em 0.15em 0px 0 black;
-  margin-right: 5px; }
+  box-shadow: -0.05em 0.12em 0px 0 black;
+  margin-right: 5px;
+  height: 20px;
+  align-self: center; }
 
 .frame-art {
   height: 50%;
@@ -200,7 +211,8 @@ body {
   height: 9%;
   width: 6%;
   overflow: hidden;
-  margin-right: 10px; }
+  margin-right: 10px;
+  align-self: center; }
 
 .frame-type-line {
   margin-top: 0; }
@@ -211,9 +223,9 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  padding: 10px;
+  padding: 30px 6px;
   box-sizing: border-box;
-  font-size: 1.28em; }
+  font-size: 1.2em; }
 
 .flavour-text {
   font-style: italic;
@@ -233,7 +245,7 @@ p {
 
 .frame-bottom-info img {
   overflow: hidden;
-  width: 10px; }
+  max-width: 10px; }
 
 .fbi-left {
   flex: 1; }
@@ -273,7 +285,10 @@ p {
 */
 .frame-header,
 .frame-type-line {
-  border: 5px solid #a9a9a9; }
+  border-bottom: 4px solid #a9a9a9;
+  border-left: 2px solid #a9a9a9;
+  border-top: 1px solid #fff;
+  border-right: 1px solid #fff; }
 
 .frame-header,
 .frame-art,
@@ -287,7 +302,11 @@ p {
 /*
     ----------------------
     ----------------------
-            SHADOW
+            OVERFLOW
     ----------------------
     ----------------------
 */
+.frame-header,
+.frame-type-line,
+.frame-text-box {
+  overflow: hidden; }
