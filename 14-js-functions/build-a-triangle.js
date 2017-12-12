@@ -25,10 +25,12 @@
       }
       return line + "\n";
     }
-    You will need to call this makeLine() function in buildTriangle().
+    You will need to call this makeLine() functin in buildTriangle().
  */
 
 // creates a line of * for a given length
+
+// builds a triangle: argument passed is the height and triangle's widest width
 function makeLine(length) {
     var line = "";
     for (var j = 1; j <= length; j++) {

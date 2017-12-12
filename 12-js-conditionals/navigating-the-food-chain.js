@@ -17,8 +17,21 @@ var eatsPlants = false;
 var eatsAnimals = false;
 
 var category =
+    
+    //the animal eats plants and not other animals? If yes, it's an herbivore! If not...
     (eatsPlants && !eatsAnimals)? "herbivore" :
+    
+    //the animal doesn't eat plants but eats other animals? If yes, it's a carnivore! If not...
     (!eatsPlants && eatsAnimals)? "carnivore" :
+    
+    //the animal eats both plants AND other animals? If yes, it's an omnivore!
+    // If not, the animal doesn't belong to any of the categories (Maybe it's an alien??).
     (eatsPlants && eatsAnimals)? "omnivore": undefined;
                 
-console.log(category);
+// print the output assigned to category after running the if...else conditional statement      
+// which will be one of the following:
+// * herbivore
+// * carnivore
+// * omnivore
+// * undefined
+console.log(category); 

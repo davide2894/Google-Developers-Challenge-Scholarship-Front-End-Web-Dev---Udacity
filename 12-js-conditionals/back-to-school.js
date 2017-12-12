@@ -9,6 +9,9 @@ var education = "a Doctoral degree";
 var salary;
 
 // your code goes here
+
+// this switch statement won't fall-through because each case uses "break"
+// in other words, if one of the following conditions is satifsied the loop stops
 switch(education) {
     case "no high school diploma":
         salary = 25636;
@@ -39,4 +42,5 @@ switch(education) {
         break;
 }
 
+// print a string containing the loop's output (one of the 7 cases of the switch statement)
 console.log("In 2015, a person with " + education + " earned an average of $" + salary.toLocaleString() + "/year.");

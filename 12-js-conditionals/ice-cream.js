@@ -5,8 +5,8 @@
  * 
  * "I'd like two scoops of __________ ice cream in a __________ with __________."
  * 
- * ...only if:
- *   - flavor is "vanilla" or "chocolate"
+ * ...only if all the the follwing 3 conditions are true
+ *   - flavor is "vanilla" or "chocolate" 
  *   - vessel is "cone" or "bowl"
  *   - toppings is "sprinkles" or "peanuts"
  *

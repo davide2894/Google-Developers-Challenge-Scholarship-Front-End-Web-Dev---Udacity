@@ -10,6 +10,10 @@
     }
 */
 
+// the error of the loop above is that 
+// it lacks semicolons (;) among the conditions of the for() statement
+
+// here is the correct version
 for(var k = 0; k < 200; k++) {
     console.log(k);
 }

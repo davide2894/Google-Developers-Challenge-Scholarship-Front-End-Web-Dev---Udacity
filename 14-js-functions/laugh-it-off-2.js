@@ -11,7 +11,10 @@ function laugh(num){
     
     var ha = "";
     
+    // based on the number passed as the argument
+    // build a laughter string 
     for(var i=0; i<num; i++){
+        
         
         if(i === (num-1)){
             ha += "ha!";
@@ -24,4 +27,5 @@ function laugh(num){
     
     return ha;
 }
+// print the laughter built in the for loop
 console.log(laugh(3));

@@ -11,8 +11,15 @@
  */
 
 // Write your code here
+
+// for each row
 for(var row=0; row<26; row++){
+    
+    // and for each seat
     for(var seat=0; seat<100; seat++){
+        
+        // print the seat as "row number - seat number "
+        // example: 0-0, 0-1 and so on
         console.log(row+"-"+seat);
     }
 }

@@ -1,9 +1,9 @@
 /*
-    Programming Quiz: Laugh (5-4)
- 
-    Write an anonymous function expression that stores a function in a variable called "laugh" and outputs the number of "ha"s that you pass in as an argument.
+ * Programming Quiz: Laugh (5-4)
  */
 
+// function expression stored in variable laugh
+// that return a laughter string whose length is the passed argument
 var laugh = function(nOfTimes){
    var ha = "";
    for(var i=0; i<nOfTimes; i++){
@@ -18,4 +18,5 @@ var laugh = function(nOfTimes){
    return ha;
 };
 
-console.log(laugh(3)); // hahaha!
+// prints the laughter 
+console.log(laugh(3));

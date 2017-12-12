@@ -10,6 +10,7 @@ function emotions(myString, myFunc) {
 // your code goes here
 // call the emotions function here and pass in an
 // inline function expression 
+// that returns a laugh whose length is the argument passed in
 
 emotions("happy", function(num){
     var ha = "";

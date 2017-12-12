@@ -1,11 +1,14 @@
 /*
-    Programming Quiz: Cry (5-5)
-    
-    Write a named function expression that stores the function in a variable called cry and returns "boohoo!". Don't forget to call the function using the variable name, not the function name:  
+ * Programming Quiz: Cry (5-5)
  */
 
 // your code goes here
+
+// stores in variable cry 
+// a function expression that 
+// returns the string "boohoo!"
 var cry = function scream(){
     return "boohoo!";
 };
-cry();
+cry(); // calls function expression
+       // returns: boohoo!
